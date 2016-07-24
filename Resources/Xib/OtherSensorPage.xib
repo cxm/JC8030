@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OtherSensorPageController">
+            <connections>
+                <outlet property="lasUpdate" destination="dQC-86-HxA" id="874-bm-7Ll"/>
+                <outlet property="myTableView" destination="Gtf-D7-Mvc" id="k1H-DP-NIP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="7Dh-VL-awn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Vn-2o-lwr" userLabel="lastUpdate">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="33"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Last Update:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQC-86-HxA">
+                            <rect key="frame" x="8" y="9" width="312" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="dQC-86-HxA" firstAttribute="top" secondItem="8Vn-2o-lwr" secondAttribute="top" constant="9" id="Ajt-gn-tIc"/>
+                        <constraint firstAttribute="trailing" secondItem="dQC-86-HxA" secondAttribute="trailing" id="FvI-fm-m45"/>
+                        <constraint firstAttribute="bottom" secondItem="dQC-86-HxA" secondAttribute="bottom" constant="8" id="PhV-oT-Ovn"/>
+                        <constraint firstItem="dQC-86-HxA" firstAttribute="leading" secondItem="8Vn-2o-lwr" secondAttribute="leading" constant="8" id="qxg-Nd-OFW"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gtf-D7-Mvc">
+                    <rect key="frame" x="0.0" y="41" width="320" height="332"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="332" id="xmy-pG-AmR"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8Vn-2o-lwr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3nZ-rr-HE7"/>
+                <constraint firstItem="Gtf-D7-Mvc" firstAttribute="top" secondItem="8Vn-2o-lwr" secondAttribute="bottom" constant="8" id="MBD-vI-tlC"/>
+                <constraint firstItem="Gtf-D7-Mvc" firstAttribute="top" secondItem="8Vn-2o-lwr" secondAttribute="bottom" constant="8" id="Q2V-QU-DQu"/>
+                <constraint firstItem="8Vn-2o-lwr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZDP-j3-pdG"/>
+                <constraint firstItem="Gtf-D7-Mvc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="g4p-7N-Ub0"/>
+                <constraint firstAttribute="trailing" secondItem="Gtf-D7-Mvc" secondAttribute="trailing" id="hh9-wG-fGr"/>
+                <constraint firstAttribute="trailing" secondItem="8Vn-2o-lwr" secondAttribute="trailing" id="oPB-rq-fH6"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

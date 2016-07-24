@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ClassName</key>
+		<string>AddNewBinController</string>
+		<key>Title</key>
+		<string>Bin</string>
+	</dict>
+	<dict>
+		<key>ClassName</key>
+		<string>CableSettingsController</string>
+		<key>Title</key>
+		<string>Cable</string>
+	</dict>
+	<dict>
+		<key>ClassName</key>
+		<string>AlarmSettingsController</string>
+		<key>Title</key>
+		<string>Alarm</string>
+	</dict>
+	<dict>
+		<key>ClassName</key>
+		<string>FanSettingsController</string>
+		<key>Title</key>
+		<string>Fan</string>
+	</dict>
+</array>
+</plist>

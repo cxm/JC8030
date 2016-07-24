@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="9Ik-oX-V93" customClass="FanOperationCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Ik-oX-V93" id="EgA-zT-9Rb">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYW-pV-NZZ">
+                        <rect key="frame" x="81" y="11" width="136" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.23137254900000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caf-rV-qlp">
+                        <rect key="frame" x="225" y="5" width="33" height="33"/>
+                        <state key="normal" backgroundImage="stop.png"/>
+                        <state key="selected" backgroundImage="fanSelect.png"/>
+                        <state key="highlighted" backgroundImage="fanSelect.png"/>
+                        <connections>
+                            <action selector="startFan:" destination="9Ik-oX-V93" eventType="touchUpInside" id="IgA-bE-cyp"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHk-CG-qxZ">
+                        <rect key="frame" x="274" y="5" width="33" height="33"/>
+                        <state key="normal" backgroundImage="start.png"/>
+                        <state key="selected" backgroundImage="fanSelect.png"/>
+                        <state key="highlighted" backgroundImage="fanSelect.png"/>
+                        <connections>
+                            <action selector="stopFan:" destination="9Ik-oX-V93" eventType="touchUpInside" id="CvV-De-mur"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FanName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbR-UD-G5g">
+                        <rect key="frame" x="8" y="11" width="65" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="caf-rV-qlp" firstAttribute="leading" secondItem="JYW-pV-NZZ" secondAttribute="trailing" constant="8" id="49h-Ff-gLj"/>
+                    <constraint firstItem="VbR-UD-G5g" firstAttribute="top" secondItem="EgA-zT-9Rb" secondAttribute="topMargin" constant="3" id="5Io-BL-QjH"/>
+                    <constraint firstItem="caf-rV-qlp" firstAttribute="leading" secondItem="JYW-pV-NZZ" secondAttribute="trailing" constant="8" id="5V9-b5-nG2"/>
+                    <constraint firstItem="caf-rV-qlp" firstAttribute="top" secondItem="EgA-zT-9Rb" secondAttribute="topMargin" constant="-3" id="8Fi-ED-71P"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="JYW-pV-NZZ" secondAttribute="bottom" constant="3" id="93G-ja-rcR"/>
+                    <constraint firstItem="lHk-CG-qxZ" firstAttribute="leading" secondItem="caf-rV-qlp" secondAttribute="trailing" constant="16" id="95X-tm-4tc"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VbR-UD-G5g" secondAttribute="bottom" constant="3" id="99T-HL-C5h"/>
+                    <constraint firstItem="lHk-CG-qxZ" firstAttribute="top" secondItem="EgA-zT-9Rb" secondAttribute="topMargin" constant="-3" id="AIt-q4-o1P"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lHk-CG-qxZ" secondAttribute="bottom" constant="-3" id="ELZ-lj-NeN"/>
+                    <constraint firstItem="lHk-CG-qxZ" firstAttribute="leading" secondItem="caf-rV-qlp" secondAttribute="trailing" constant="16" id="Ewo-1B-lDw"/>
+                    <constraint firstItem="JYW-pV-NZZ" firstAttribute="leading" secondItem="VbR-UD-G5g" secondAttribute="trailing" constant="8" id="HLx-rB-HOo"/>
+                    <constraint firstItem="VbR-UD-G5g" firstAttribute="leading" secondItem="EgA-zT-9Rb" secondAttribute="leadingMargin" id="PdP-EZ-mXt"/>
+                    <constraint firstItem="JYW-pV-NZZ" firstAttribute="leading" secondItem="VbR-UD-G5g" secondAttribute="trailing" constant="8" id="XR0-qC-qOm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lHk-CG-qxZ" secondAttribute="trailing" constant="5" id="gR8-Qh-SPU"/>
+                    <constraint firstItem="JYW-pV-NZZ" firstAttribute="top" secondItem="EgA-zT-9Rb" secondAttribute="topMargin" constant="3" id="ia4-w4-ZAe"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="caf-rV-qlp" secondAttribute="bottom" constant="-3" id="x0y-Qm-0lK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelFanName" destination="VbR-UD-G5g" id="h6v-nS-tEj"/>
+                <outlet property="labelFanOp" destination="JYW-pV-NZZ" id="jfh-Z0-ajo"/>
+                <outlet property="start" destination="caf-rV-qlp" id="c8X-rd-JF9"/>
+                <outlet property="stop" destination="lHk-CG-qxZ" id="GFb-5W-Nqr"/>
+            </connections>
+            <point key="canvasLocation" x="329" y="298"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fanSelect.png" width="33" height="33"/>
+        <image name="start.png" width="33" height="33"/>
+        <image name="stop.png" width="33" height="33"/>
+    </resources>
+</document>

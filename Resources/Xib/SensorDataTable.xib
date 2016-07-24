@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DataTable">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="dVS-9m-0BJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGo-nU-f0o">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="E54-F8-eC8"/>
+                    </constraints>
+                    <state key="normal" title="More"/>
+                    <connections>
+                        <action selector="MoreData:" destination="-1" eventType="touchUpInside" id="ZP0-QH-O9n"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MGo-nU-f0o" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="scP-zq-L4f"/>
+                <constraint firstAttribute="trailing" secondItem="MGo-nU-f0o" secondAttribute="trailing" id="vEn-yi-nek"/>
+                <constraint firstItem="MGo-nU-f0o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="y8H-bQ-680"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

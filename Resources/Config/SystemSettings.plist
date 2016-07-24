@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Station</key>
+	<dict>
+		<key>Phone Number</key>
+		<string>+8613803453137</string>
+	</dict>
+	<key>Temperature Units</key>
+	<dict>
+		<key>℃</key>
+		<integer>1</integer>
+		<key>℉</key>
+		<integer>0</integer>
+	</dict>
+	<key>Weight Units</key>
+	<dict>
+		<key>Bushels</key>
+		<integer>0</integer>
+		<key>Tonnes</key>
+		<integer>1</integer>
+		<key>Pounds</key>
+		<integer>0</integer>
+	</dict>
+</dict>
+</plist>

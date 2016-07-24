@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainPageController">
+            <connections>
+                <outlet property="addNewBin" destination="MRJ-Xi-dYb" id="Vk9-lG-WOj"/>
+                <outlet property="myTableView" destination="vTQ-wf-eN0" id="Tbk-0p-oo5"/>
+                <outlet property="view" destination="rPT-jE-x05" id="7PY-Qa-0S6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rPT-jE-x05">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vTQ-wf-eN0">
+                    <rect key="frame" x="0.0" y="55" width="320" height="425"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRJ-Xi-dYb">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="NdU-jI-icb"/>
+                    </constraints>
+                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Add New Bin"/>
+                    <connections>
+                        <action selector="addNew:" destination="-1" eventType="touchUpInside" id="RWE-Sl-f1P"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vTQ-wf-eN0" firstAttribute="leading" secondItem="rPT-jE-x05" secondAttribute="leading" id="3yy-tL-Fnp"/>
+                <constraint firstAttribute="trailing" secondItem="MRJ-Xi-dYb" secondAttribute="trailing" id="4em-YS-q9o"/>
+                <constraint firstAttribute="bottom" secondItem="vTQ-wf-eN0" secondAttribute="bottom" id="N2U-63-QiW"/>
+                <constraint firstItem="MRJ-Xi-dYb" firstAttribute="top" secondItem="rPT-jE-x05" secondAttribute="top" id="SBF-tX-D4V"/>
+                <constraint firstItem="MRJ-Xi-dYb" firstAttribute="leading" secondItem="rPT-jE-x05" secondAttribute="leading" id="fhN-vc-UWD"/>
+                <constraint firstItem="vTQ-wf-eN0" firstAttribute="top" secondItem="MRJ-Xi-dYb" secondAttribute="bottom" constant="8" id="ifY-DI-kSV"/>
+                <constraint firstAttribute="trailing" secondItem="vTQ-wf-eN0" secondAttribute="trailing" id="zIW-qC-ihd"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="883" y="-368"/>
+        </view>
+    </objects>
+</document>
